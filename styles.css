@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.pdf-viewer {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
+.pdf-canvas {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    border: none;
+    transition: opacity 0.3s ease;
+}
+
+#prev-button, #next-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#prev-button:hover, #next-button:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+#prev-button::before {
+    content: '\2190'; /* Sol ok */
+}
+
+#next-button::before {
+    content: '\2192'; /* Sağ ok */
+} 
